@@ -1,8 +1,9 @@
 import os,sys
 get_path = os.path.dirname(os.path.abspath(__file__))
 sys.path.append(get_path)
-from diffusion_loader import DiffusionDataset
-from ViT import DiffusionVisionTransformer
+sys.path.append('/home/ailanyy1/anaconda3/lib/python3.8/site-packages')
+from diffusion_loader import ColdDownSampleDataset   #nyy change dataset
+from ViT_draft2drawing import DiffusionVisionTransformer
 import numpy as np
 import torch
 import torch.distributed as dist
@@ -11,6 +12,7 @@ from torch.utils.data.distributed import DistributedSampler
 from torch.utils.data import DataLoader
 import time
 import torch.nn.functional as F
+from torch.utils.tensorboard import SummaryWriter
 #os.environ["TORCH_DISTRIBUTED_DEBUG"] = "DETAIL"
 
 def printLog(string,fileName):
@@ -54,8 +56,8 @@ def main(
 
     init_process_group(world_size, rank)
        
-    train_set = DiffusionDataset(datadir[0],imgSize=image_size,max_step=diff_step)
-    test_set = DiffusionDataset(datadir[1],imgSize=image_size,max_step=diff_step)
+    train_set = ColdDownSampleDataset(datadir[0],imgSize=image_size) #nyy change dataset
+    test_set = ColdDownSampleDataset(datadir[1],imgSize=image_size)  #nyy change dataset
     train_sampler = DistributedSampler(train_set,world_size,rank,True,seed=42,drop_last=True)
     test_sampler = DistributedSampler(test_set,world_size,rank,False,drop_last=False)
     train_dataloader = DataLoader(train_set,batch_size=batch_size,sampler=train_sampler,num_workers=8)
@@ -102,23 +104,25 @@ def main(
         best_loss = ckpt['metric']
         if rank == 0:
             printLog(f'recovering best_loss {best_loss:4f}',log)
-    time_start=time.time()        
+    time_start=time.time()   
+    writer = SummaryWriter()  #nyy tensorboard     
     for epoch in range(*epoch_num):
         model.train()
         # The line below ensures all processes use a different
         # random ordering in data loading for each epoch.
         train_sampler.set_epoch(epoch)
-        train_generator = iter(train_dataloader)
-        for _ in range(len(train_dataloader)):
+        train_generator = iter(train_dataloader)                                                             
+        for _ in range(len(train_dataloader)):  
+                                                             #NOTE看到这
             noisy_img,img,t = next(train_generator)
             noisy_img = noisy_img.to(device)
             img = img.to(device)
             t = t.to(device)
 
             with torch.cuda.amp.autocast(enabled=amp):
-                denoised_img = model(noisy_img,t)
+                denoised_img = model(noisy_img,t)             #BUG CUDA out of memory
                 loss = F.smooth_l1_loss(denoised_img,img)
-            print(loss)
+                print(loss)                
             loss_rec = loss_rec*0.99+loss.item()*0.01
             optimizer.zero_grad(set_to_none=False)
             scaler.scale(loss).backward()
@@ -144,6 +148,7 @@ def main(
         if rank == 0:
             #print(np.around(val_hist).astype(np.int32))
             printLog(f'epoch: {epoch:4d}    loss: {vloss:.5f}    time:{time.asctime(time.localtime(time.time()))}',log) 
+            writer.add_scalar("loss",vloss,epoch)                  #nyy tensorboard
             if vloss<best_loss:
                 best_loss = vloss
                 torch.save(model.module.state_dict(),CheckpointDir+"bestloss.pkl")
@@ -155,7 +160,8 @@ def main(
                         'state_dict': model.state_dict(),
                         'scheduler': scheduler.state_dict(),
                         'optimizer': optimizer.state_dict(),
-                        }, CheckpointDir+"lastepoch.pkl")             
+                        }, CheckpointDir+"lastepoch.pkl")  
+    writer.close()           
     dist.destroy_process_group()
 
 if __name__ == '__main__':

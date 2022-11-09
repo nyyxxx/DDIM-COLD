@@ -1,14 +1,14 @@
 initializing : 'vit_tiny.pkl' #
 resume: 'none'
-AMP : False 
+AMP : True  #3090=true v100=false
 framework : 'vit_tiny_diffusion'
 num_gpus : 1
-batch_size : 128
+batch_size : 16
 epoch : [0,100]
 base_lr : 0.005 # per 512
-dataStorage : ["/mnt/d/Datasets/MiniImageNet/train","/mnt/d/Datasets/MiniImageNet/val"]
+dataStorage : ["/data3/yuyan/DDIM-COLD/OxfordFlowers/train","//data3/yuyan/DDIM-COLD/OxfordFlowers/val"] #usr/..
 image_size : [64,64]
-diff_step : 2000
+diff_step : 6  # in down sample just 6  (64=2^6) ; in diffusion 2000
 patch_size : 8
 embed_dim : 384
 depth : 7

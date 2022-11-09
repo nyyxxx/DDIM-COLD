@@ -1,0 +1,641 @@
+Date: Wed Oct 12 17:16:10 2022
+TrainSet batchs:512
+TestSet batchs:85
+steps:      100 loss: 1.8870 time_cost: 45.45
+steps:      200 loss: 0.7394 time_cost: 4.97
+steps:      300 loss: 0.3195 time_cost: 5.06
+steps:      400 loss: 0.1644 time_cost: 4.92
+steps:      500 loss: 0.1061 time_cost: 4.48
+epoch:    0    loss: 0.07100    time:Wed Oct 12 17:17:32 2022
+steps:      600 loss: 0.0847 time_cost: 42.10
+steps:      700 loss: 0.0760 time_cost: 4.51
+steps:      800 loss: 0.0707 time_cost: 4.48
+steps:      900 loss: 0.0683 time_cost: 4.25
+steps:     1000 loss: 0.0661 time_cost: 4.74
+epoch:    1    loss: 0.06362    time:Wed Oct 12 17:18:26 2022
+steps:     1100 loss: 0.0646 time_cost: 29.13
+steps:     1200 loss: 0.0640 time_cost: 4.54
+steps:     1300 loss: 0.0633 time_cost: 4.79
+steps:     1400 loss: 0.0629 time_cost: 4.57
+steps:     1500 loss: 0.0630 time_cost: 4.46
+epoch:    2    loss: 0.06249    time:Wed Oct 12 17:19:15 2022
+steps:     1600 loss: 0.0619 time_cost: 29.43
+steps:     1700 loss: 0.0617 time_cost: 5.21
+steps:     1800 loss: 0.0619 time_cost: 4.81
+steps:     1900 loss: 0.0613 time_cost: 4.98
+steps:     2000 loss: 0.0616 time_cost: 4.76
+Date: Wed Oct 12 17:20:50 2022
+TrainSet batchs:512
+TestSet batchs:85
+steps:      100 loss: 1.8870 time_cost: 30.05
+steps:      200 loss: 0.7420 time_cost: 4.79
+steps:      300 loss: 0.3197 time_cost: 4.55
+steps:      400 loss: 0.1639 time_cost: 4.59
+steps:      500 loss: 0.1071 time_cost: 4.56
+epoch:    0    loss: 0.07221    time:Wed Oct 12 17:21:49 2022
+steps:      600 loss: 0.0856 time_cost: 36.15
+steps:      700 loss: 0.0744 time_cost: 4.40
+steps:      800 loss: 0.0706 time_cost: 4.99
+steps:      900 loss: 0.0675 time_cost: 4.47
+steps:     1000 loss: 0.0666 time_cost: 4.31
+epoch:    1    loss: 0.06492    time:Wed Oct 12 17:22:42 2022
+steps:     1100 loss: 0.0649 time_cost: 44.34
+steps:     1200 loss: 0.0636 time_cost: 4.72
+steps:     1300 loss: 0.0632 time_cost: 4.49
+steps:     1400 loss: 0.0624 time_cost: 4.35
+steps:     1500 loss: 0.0624 time_cost: 4.43
+epoch:    2    loss: 0.06310    time:Wed Oct 12 17:23:43 2022
+steps:     1600 loss: 0.0626 time_cost: 31.02
+steps:     1700 loss: 0.0626 time_cost: 4.68
+steps:     1800 loss: 0.0621 time_cost: 4.27
+steps:     1900 loss: 0.0619 time_cost: 4.61
+steps:     2000 loss: 0.0613 time_cost: 4.81
+epoch:    3    loss: 0.06059    time:Wed Oct 12 17:24:36 2022
+steps:     2100 loss: 0.0619 time_cost: 33.55
+steps:     2200 loss: 0.0617 time_cost: 5.13
+steps:     2300 loss: 0.0613 time_cost: 4.96
+steps:     2400 loss: 0.0606 time_cost: 4.31
+steps:     2500 loss: 0.0589 time_cost: 4.74
+epoch:    4    loss: 0.06060    time:Wed Oct 12 17:25:35 2022
+steps:     2600 loss: 0.0584 time_cost: 47.09
+steps:     2700 loss: 0.0591 time_cost: 4.74
+steps:     2800 loss: 0.0597 time_cost: 4.28
+steps:     2900 loss: 0.0588 time_cost: 4.93
+steps:     3000 loss: 0.0594 time_cost: 5.24
+epoch:    5    loss: 0.05990    time:Wed Oct 12 17:26:39 2022
+steps:     3100 loss: 0.0595 time_cost: 54.07
+steps:     3200 loss: 0.0598 time_cost: 4.80
+steps:     3300 loss: 0.0586 time_cost: 4.84
+steps:     3400 loss: 0.0577 time_cost: 12.67
+steps:     3500 loss: 0.0583 time_cost: 5.09
+epoch:    6    loss: 0.05996    time:Wed Oct 12 17:28:03 2022
+steps:     3600 loss: 0.0572 time_cost: 57.81
+steps:     3700 loss: 0.0565 time_cost: 10.24
+steps:     3800 loss: 0.0568 time_cost: 6.57
+steps:     3900 loss: 0.0578 time_cost: 4.80
+steps:     4000 loss: 0.0579 time_cost: 4.54
+epoch:    7    loss: 0.05798    time:Wed Oct 12 17:29:25 2022
+steps:     4100 loss: 0.0561 time_cost: 35.77
+steps:     4200 loss: 0.0576 time_cost: 4.64
+steps:     4300 loss: 0.0565 time_cost: 4.95
+steps:     4400 loss: 0.0570 time_cost: 4.37
+steps:     4500 loss: 0.0567 time_cost: 4.56
+steps:     4600 loss: 0.0568 time_cost: 4.10
+epoch:    8    loss: 0.05846    time:Wed Oct 12 17:30:19 2022
+steps:     4700 loss: 0.0568 time_cost: 35.93
+steps:     4800 loss: 0.0571 time_cost: 5.90
+steps:     4900 loss: 0.0573 time_cost: 4.09
+steps:     5000 loss: 0.0572 time_cost: 4.12
+steps:     5100 loss: 0.0572 time_cost: 4.35
+epoch:    9    loss: 0.05722    time:Wed Oct 12 17:31:17 2022
+steps:     5200 loss: 0.0573 time_cost: 33.57
+steps:     5300 loss: 0.0569 time_cost: 4.38
+steps:     5400 loss: 0.0573 time_cost: 4.56
+steps:     5500 loss: 0.0566 time_cost: 4.58
+steps:     5600 loss: 0.0559 time_cost: 4.67
+epoch:   10    loss: 0.05918    time:Wed Oct 12 17:32:08 2022
+steps:     5700 loss: 0.0565 time_cost: 31.41
+steps:     5800 loss: 0.0570 time_cost: 4.55
+steps:     5900 loss: 0.0567 time_cost: 4.32
+steps:     6000 loss: 0.0565 time_cost: 4.15
+steps:     6100 loss: 0.0581 time_cost: 4.74
+epoch:   11    loss: 0.05821    time:Wed Oct 12 17:32:59 2022
+steps:     6200 loss: 0.0565 time_cost: 29.60
+steps:     6300 loss: 0.0568 time_cost: 4.78
+steps:     6400 loss: 0.0567 time_cost: 4.42
+steps:     6500 loss: 0.0563 time_cost: 3.96
+steps:     6600 loss: 0.0575 time_cost: 4.06
+epoch:   12    loss: 0.05589    time:Wed Oct 12 17:33:48 2022
+steps:     6700 loss: 0.0561 time_cost: 29.79
+steps:     6800 loss: 0.0561 time_cost: 4.21
+steps:     6900 loss: 0.0549 time_cost: 4.27
+steps:     7000 loss: 0.0555 time_cost: 4.10
+steps:     7100 loss: 0.0553 time_cost: 4.53
+epoch:   13    loss: 0.05573    time:Wed Oct 12 17:34:33 2022
+steps:     7200 loss: 0.0549 time_cost: 30.68
+steps:     7300 loss: 0.0550 time_cost: 4.27
+steps:     7400 loss: 0.0545 time_cost: 4.64
+steps:     7500 loss: 0.0551 time_cost: 4.26
+steps:     7600 loss: 0.0546 time_cost: 4.30
+epoch:   14    loss: 0.05550    time:Wed Oct 12 17:35:25 2022
+steps:     7700 loss: 0.0537 time_cost: 31.95
+steps:     7800 loss: 0.0543 time_cost: 4.80
+steps:     7900 loss: 0.0546 time_cost: 5.16
+steps:     8000 loss: 0.0555 time_cost: 4.81
+steps:     8100 loss: 0.0551 time_cost: 5.10
+epoch:   15    loss: 0.05380    time:Wed Oct 12 17:36:19 2022
+steps:     8200 loss: 0.0534 time_cost: 31.13
+steps:     8300 loss: 0.0534 time_cost: 4.58
+steps:     8400 loss: 0.0540 time_cost: 5.02
+steps:     8500 loss: 0.0541 time_cost: 5.02
+steps:     8600 loss: 0.0547 time_cost: 4.27
+steps:     8700 loss: 0.0549 time_cost: 4.56
+epoch:   16    loss: 0.05600    time:Wed Oct 12 17:37:08 2022
+steps:     8800 loss: 0.0553 time_cost: 29.57
+steps:     8900 loss: 0.0542 time_cost: 4.65
+steps:     9000 loss: 0.0538 time_cost: 4.45
+steps:     9100 loss: 0.0541 time_cost: 4.66
+steps:     9200 loss: 0.0536 time_cost: 5.07
+epoch:   17    loss: 0.05508    time:Wed Oct 12 17:37:59 2022
+steps:     9300 loss: 0.0537 time_cost: 31.00
+steps:     9400 loss: 0.0542 time_cost: 4.76
+steps:     9500 loss: 0.0541 time_cost: 4.79
+steps:     9600 loss: 0.0539 time_cost: 4.77
+steps:     9700 loss: 0.0545 time_cost: 4.58
+epoch:   18    loss: 0.05396    time:Wed Oct 12 17:38:55 2022
+steps:     9800 loss: 0.0551 time_cost: 31.45
+steps:     9900 loss: 0.0548 time_cost: 4.69
+steps:    10000 loss: 0.0550 time_cost: 4.52
+steps:    10100 loss: 0.0535 time_cost: 4.72
+steps:    10200 loss: 0.0535 time_cost: 4.69
+epoch:   19    loss: 0.05375    time:Wed Oct 12 17:39:44 2022
+steps:    10300 loss: 0.0533 time_cost: 29.72
+steps:    10400 loss: 0.0533 time_cost: 4.77
+steps:    10500 loss: 0.0538 time_cost: 4.14
+steps:    10600 loss: 0.0541 time_cost: 4.47
+steps:    10700 loss: 0.0540 time_cost: 4.05
+epoch:   20    loss: 0.05474    time:Wed Oct 12 17:40:33 2022
+steps:    10800 loss: 0.0534 time_cost: 33.58
+steps:    10900 loss: 0.0537 time_cost: 4.81
+steps:    11000 loss: 0.0539 time_cost: 4.86
+steps:    11100 loss: 0.0536 time_cost: 5.01
+steps:    11200 loss: 0.0523 time_cost: 4.89
+epoch:   21    loss: 0.05148    time:Wed Oct 12 17:41:29 2022
+steps:    11300 loss: 0.0525 time_cost: 30.05
+steps:    11400 loss: 0.0535 time_cost: 4.61
+steps:    11500 loss: 0.0534 time_cost: 4.50
+steps:    11600 loss: 0.0530 time_cost: 4.18
+steps:    11700 loss: 0.0551 time_cost: 3.99
+epoch:   22    loss: 0.05405    time:Wed Oct 12 17:42:15 2022
+steps:    11800 loss: 0.0547 time_cost: 27.40
+steps:    11900 loss: 0.0539 time_cost: 4.29
+steps:    12000 loss: 0.0529 time_cost: 4.06
+steps:    12100 loss: 0.0525 time_cost: 4.08
+steps:    12200 loss: 0.0530 time_cost: 4.32
+epoch:   23    loss: 0.05343    time:Wed Oct 12 17:43:02 2022
+steps:    12300 loss: 0.0538 time_cost: 29.56
+steps:    12400 loss: 0.0529 time_cost: 4.36
+steps:    12500 loss: 0.0544 time_cost: 4.68
+steps:    12600 loss: 0.0554 time_cost: 4.46
+steps:    12700 loss: 0.0555 time_cost: 4.62
+steps:    12800 loss: 0.0537 time_cost: 4.81
+epoch:   24    loss: 0.05381    time:Wed Oct 12 17:43:51 2022
+steps:    12900 loss: 0.0539 time_cost: 32.88
+steps:    13000 loss: 0.0525 time_cost: 4.30
+steps:    13100 loss: 0.0535 time_cost: 4.40
+steps:    13200 loss: 0.0535 time_cost: 3.98
+steps:    13300 loss: 0.0533 time_cost: 4.45
+epoch:   25    loss: 0.05463    time:Wed Oct 12 17:44:39 2022
+steps:    13400 loss: 0.0530 time_cost: 27.08
+steps:    13500 loss: 0.0526 time_cost: 4.29
+steps:    13600 loss: 0.0520 time_cost: 4.57
+steps:    13700 loss: 0.0530 time_cost: 4.57
+steps:    13800 loss: 0.0524 time_cost: 4.74
+epoch:   26    loss: 0.05409    time:Wed Oct 12 17:45:28 2022
+steps:    13900 loss: 0.0531 time_cost: 33.06
+steps:    14000 loss: 0.0518 time_cost: 4.40
+steps:    14100 loss: 0.0520 time_cost: 4.96
+steps:    14200 loss: 0.0528 time_cost: 4.75
+steps:    14300 loss: 0.0526 time_cost: 4.70
+epoch:   27    loss: 0.05370    time:Wed Oct 12 17:46:22 2022
+steps:    14400 loss: 0.0531 time_cost: 39.00
+steps:    14500 loss: 0.0523 time_cost: 4.46
+steps:    14600 loss: 0.0528 time_cost: 4.25
+steps:    14700 loss: 0.0522 time_cost: 4.61
+steps:    14800 loss: 0.0534 time_cost: 4.15
+epoch:   28    loss: 0.05343    time:Wed Oct 12 17:47:15 2022
+steps:    14900 loss: 0.0525 time_cost: 29.74
+steps:    15000 loss: 0.0532 time_cost: 4.38
+steps:    15100 loss: 0.0526 time_cost: 4.61
+steps:    15200 loss: 0.0529 time_cost: 4.34
+steps:    15300 loss: 0.0522 time_cost: 4.18
+epoch:   29    loss: 0.05333    time:Wed Oct 12 17:48:04 2022
+steps:    15400 loss: 0.0521 time_cost: 29.82
+steps:    15500 loss: 0.0533 time_cost: 4.72
+steps:    15600 loss: 0.0520 time_cost: 4.15
+steps:    15700 loss: 0.0531 time_cost: 4.89
+steps:    15800 loss: 0.0537 time_cost: 4.06
+epoch:   30    loss: 0.05226    time:Wed Oct 12 17:48:56 2022
+steps:    15900 loss: 0.0540 time_cost: 34.96
+steps:    16000 loss: 0.0538 time_cost: 4.67
+steps:    16100 loss: 0.0538 time_cost: 4.41
+steps:    16200 loss: 0.0519 time_cost: 4.18
+steps:    16300 loss: 0.0523 time_cost: 4.17
+epoch:   31    loss: 0.05235    time:Wed Oct 12 17:49:46 2022
+steps:    16400 loss: 0.0516 time_cost: 30.03
+steps:    16500 loss: 0.0508 time_cost: 4.52
+steps:    16600 loss: 0.0515 time_cost: 4.20
+steps:    16700 loss: 0.0520 time_cost: 4.33
+steps:    16800 loss: 0.0527 time_cost: 4.53
+epoch:   32    loss: 0.05380    time:Wed Oct 12 17:50:34 2022
+steps:    16900 loss: 0.0526 time_cost: 31.81
+steps:    17000 loss: 0.0516 time_cost: 4.47
+steps:    17100 loss: 0.0518 time_cost: 4.55
+steps:    17200 loss: 0.0521 time_cost: 4.67
+steps:    17300 loss: 0.0525 time_cost: 4.50
+steps:    17400 loss: 0.0522 time_cost: 4.83
+epoch:   33    loss: 0.05411    time:Wed Oct 12 17:51:28 2022
+steps:    17500 loss: 0.0526 time_cost: 36.35
+steps:    17600 loss: 0.0534 time_cost: 4.26
+steps:    17700 loss: 0.0524 time_cost: 4.17
+steps:    17800 loss: 0.0534 time_cost: 3.83
+steps:    17900 loss: 0.0534 time_cost: 4.22
+epoch:   34    loss: 0.05408    time:Wed Oct 12 17:52:19 2022
+steps:    18000 loss: 0.0522 time_cost: 29.40
+steps:    18100 loss: 0.0528 time_cost: 4.82
+steps:    18200 loss: 0.0543 time_cost: 5.06
+steps:    18300 loss: 0.0524 time_cost: 4.73
+steps:    18400 loss: 0.0533 time_cost: 4.47
+epoch:   35    loss: 0.05312    time:Wed Oct 12 17:53:10 2022
+steps:    18500 loss: 0.0528 time_cost: 34.32
+steps:    18600 loss: 0.0533 time_cost: 4.72
+steps:    18700 loss: 0.0528 time_cost: 4.73
+steps:    18800 loss: 0.0519 time_cost: 4.58
+steps:    18900 loss: 0.0532 time_cost: 4.51
+epoch:   36    loss: 0.05313    time:Wed Oct 12 17:54:04 2022
+steps:    19000 loss: 0.0531 time_cost: 38.25
+steps:    19100 loss: 0.0531 time_cost: 4.57
+steps:    19200 loss: 0.0523 time_cost: 4.24
+steps:    19300 loss: 0.0511 time_cost: 4.05
+steps:    19400 loss: 0.0521 time_cost: 4.26
+epoch:   37    loss: 0.05337    time:Wed Oct 12 17:54:59 2022
+steps:    19500 loss: 0.0526 time_cost: 30.60
+steps:    19600 loss: 0.0530 time_cost: 4.01
+steps:    19700 loss: 0.0519 time_cost: 4.45
+steps:    19800 loss: 0.0523 time_cost: 4.89
+steps:    19900 loss: 0.0518 time_cost: 4.35
+epoch:   38    loss: 0.05217    time:Wed Oct 12 17:55:50 2022
+steps:    20000 loss: 0.0526 time_cost: 29.77
+steps:    20100 loss: 0.0527 time_cost: 4.77
+steps:    20200 loss: 0.0518 time_cost: 4.80
+steps:    20300 loss: 0.0526 time_cost: 4.74
+steps:    20400 loss: 0.0523 time_cost: 4.26
+epoch:   39    loss: 0.05440    time:Wed Oct 12 17:56:41 2022
+steps:    20500 loss: 0.0533 time_cost: 37.45
+steps:    20600 loss: 0.0521 time_cost: 4.06
+steps:    20700 loss: 0.0524 time_cost: 4.77
+steps:    20800 loss: 0.0514 time_cost: 4.41
+steps:    20900 loss: 0.0520 time_cost: 4.61
+epoch:   40    loss: 0.05248    time:Wed Oct 12 17:57:35 2022
+steps:    21000 loss: 0.0516 time_cost: 33.23
+steps:    21100 loss: 0.0522 time_cost: 4.53
+steps:    21200 loss: 0.0537 time_cost: 4.62
+steps:    21300 loss: 0.0510 time_cost: 4.48
+steps:    21400 loss: 0.0513 time_cost: 4.12
+steps:    21500 loss: 0.0519 time_cost: 4.51
+epoch:   41    loss: 0.05398    time:Wed Oct 12 17:58:27 2022
+steps:    21600 loss: 0.0511 time_cost: 31.29
+steps:    21700 loss: 0.0518 time_cost: 4.59
+steps:    21800 loss: 0.0518 time_cost: 4.80
+steps:    21900 loss: 0.0523 time_cost: 4.54
+steps:    22000 loss: 0.0520 time_cost: 4.81
+epoch:   42    loss: 0.05302    time:Wed Oct 12 17:59:20 2022
+steps:    22100 loss: 0.0529 time_cost: 36.30
+steps:    22200 loss: 0.0527 time_cost: 4.51
+steps:    22300 loss: 0.0528 time_cost: 4.30
+steps:    22400 loss: 0.0523 time_cost: 4.13
+steps:    22500 loss: 0.0522 time_cost: 4.20
+epoch:   43    loss: 0.05386    time:Wed Oct 12 18:00:11 2022
+steps:    22600 loss: 0.0531 time_cost: 26.93
+steps:    22700 loss: 0.0516 time_cost: 4.25
+steps:    22800 loss: 0.0516 time_cost: 4.01
+steps:    22900 loss: 0.0522 time_cost: 4.14
+steps:    23000 loss: 0.0515 time_cost: 4.41
+epoch:   44    loss: 0.05222    time:Wed Oct 12 18:00:58 2022
+steps:    23100 loss: 0.0516 time_cost: 28.71
+steps:    23200 loss: 0.0508 time_cost: 4.31
+steps:    23300 loss: 0.0510 time_cost: 4.60
+steps:    23400 loss: 0.0509 time_cost: 4.26
+steps:    23500 loss: 0.0519 time_cost: 4.75
+epoch:   45    loss: 0.05397    time:Wed Oct 12 18:01:44 2022
+steps:    23600 loss: 0.0511 time_cost: 35.15
+steps:    23700 loss: 0.0527 time_cost: 4.68
+steps:    23800 loss: 0.0513 time_cost: 4.31
+steps:    23900 loss: 0.0518 time_cost: 4.18
+steps:    24000 loss: 0.0523 time_cost: 4.19
+epoch:   46    loss: 0.05327    time:Wed Oct 12 18:02:40 2022
+steps:    24100 loss: 0.0526 time_cost: 31.05
+steps:    24200 loss: 0.0521 time_cost: 4.22
+steps:    24300 loss: 0.0527 time_cost: 4.84
+steps:    24400 loss: 0.0519 time_cost: 4.73
+steps:    24500 loss: 0.0526 time_cost: 4.38
+epoch:   47    loss: 0.05215    time:Wed Oct 12 18:03:27 2022
+steps:    24600 loss: 0.0521 time_cost: 28.21
+steps:    24700 loss: 0.0512 time_cost: 4.51
+steps:    24800 loss: 0.0505 time_cost: 4.77
+steps:    24900 loss: 0.0508 time_cost: 4.28
+steps:    25000 loss: 0.0515 time_cost: 4.05
+epoch:   48    loss: 0.05533    time:Wed Oct 12 18:04:15 2022
+steps:    25100 loss: 0.0507 time_cost: 31.70
+steps:    25200 loss: 0.0521 time_cost: 4.82
+steps:    25300 loss: 0.0522 time_cost: 4.61
+steps:    25400 loss: 0.0534 time_cost: 4.73
+steps:    25500 loss: 0.0518 time_cost: 4.29
+steps:    25600 loss: 0.0503 time_cost: 4.26
+epoch:   49    loss: 0.05188    time:Wed Oct 12 18:05:07 2022
+steps:    25700 loss: 0.0514 time_cost: 31.72
+steps:    25800 loss: 0.0515 time_cost: 4.36
+steps:    25900 loss: 0.0511 time_cost: 4.40
+steps:    26000 loss: 0.0517 time_cost: 4.09
+steps:    26100 loss: 0.0504 time_cost: 4.51
+epoch:   50    loss: 0.05204    time:Wed Oct 12 18:05:55 2022
+steps:    26200 loss: 0.0517 time_cost: 29.93
+steps:    26300 loss: 0.0507 time_cost: 4.32
+steps:    26400 loss: 0.0512 time_cost: 4.03
+steps:    26500 loss: 0.0525 time_cost: 4.19
+steps:    26600 loss: 0.0524 time_cost: 3.82
+epoch:   51    loss: 0.05265    time:Wed Oct 12 18:06:44 2022
+steps:    26700 loss: 0.0522 time_cost: 29.39
+steps:    26800 loss: 0.0524 time_cost: 5.04
+steps:    26900 loss: 0.0516 time_cost: 4.98
+steps:    27000 loss: 0.0514 time_cost: 4.47
+steps:    27100 loss: 0.0521 time_cost: 4.40
+epoch:   52    loss: 0.05320    time:Wed Oct 12 18:07:35 2022
+steps:    27200 loss: 0.0519 time_cost: 32.86
+steps:    27300 loss: 0.0510 time_cost: 4.62
+steps:    27400 loss: 0.0509 time_cost: 4.09
+steps:    27500 loss: 0.0510 time_cost: 4.18
+steps:    27600 loss: 0.0523 time_cost: 4.32
+epoch:   53    loss: 0.05308    time:Wed Oct 12 18:08:22 2022
+steps:    27700 loss: 0.0521 time_cost: 28.23
+steps:    27800 loss: 0.0525 time_cost: 4.14
+steps:    27900 loss: 0.0519 time_cost: 4.24
+steps:    28000 loss: 0.0510 time_cost: 4.81
+steps:    28100 loss: 0.0514 time_cost: 4.22
+epoch:   54    loss: 0.05051    time:Wed Oct 12 18:09:09 2022
+steps:    28200 loss: 0.0513 time_cost: 31.33
+steps:    28300 loss: 0.0512 time_cost: 4.52
+steps:    28400 loss: 0.0513 time_cost: 4.60
+steps:    28500 loss: 0.0524 time_cost: 4.36
+steps:    28600 loss: 0.0512 time_cost: 4.61
+epoch:   55    loss: 0.05211    time:Wed Oct 12 18:10:02 2022
+steps:    28700 loss: 0.0504 time_cost: 33.80
+steps:    28800 loss: 0.0500 time_cost: 4.47
+steps:    28900 loss: 0.0514 time_cost: 4.15
+steps:    29000 loss: 0.0513 time_cost: 4.21
+steps:    29100 loss: 0.0501 time_cost: 4.13
+epoch:   56    loss: 0.05286    time:Wed Oct 12 18:10:51 2022
+steps:    29200 loss: 0.0519 time_cost: 30.69
+steps:    29300 loss: 0.0514 time_cost: 4.15
+steps:    29400 loss: 0.0522 time_cost: 4.22
+steps:    29500 loss: 0.0514 time_cost: 4.44
+steps:    29600 loss: 0.0512 time_cost: 4.70
+epoch:   57    loss: 0.05228    time:Wed Oct 12 18:11:39 2022
+steps:    29700 loss: 0.0514 time_cost: 29.26
+steps:    29800 loss: 0.0515 time_cost: 4.22
+steps:    29900 loss: 0.0509 time_cost: 4.23
+steps:    30000 loss: 0.0503 time_cost: 4.16
+steps:    30100 loss: 0.0503 time_cost: 4.45
+steps:    30200 loss: 0.0502 time_cost: 4.32
+epoch:   58    loss: 0.05312    time:Wed Oct 12 18:12:29 2022
+steps:    30300 loss: 0.0500 time_cost: 33.89
+steps:    30400 loss: 0.0503 time_cost: 4.23
+steps:    30500 loss: 0.0499 time_cost: 4.13
+steps:    30600 loss: 0.0507 time_cost: 4.43
+steps:    30700 loss: 0.0496 time_cost: 4.05
+epoch:   59    loss: 0.05285    time:Wed Oct 12 18:13:18 2022
+steps:    30800 loss: 0.0501 time_cost: 28.20
+steps:    30900 loss: 0.0509 time_cost: 4.30
+steps:    31000 loss: 0.0503 time_cost: 4.15
+steps:    31100 loss: 0.0521 time_cost: 4.54
+steps:    31200 loss: 0.0518 time_cost: 4.03
+epoch:   60    loss: 0.05395    time:Wed Oct 12 18:14:04 2022
+steps:    31300 loss: 0.0523 time_cost: 29.61
+steps:    31400 loss: 0.0517 time_cost: 4.58
+steps:    31500 loss: 0.0508 time_cost: 4.52
+steps:    31600 loss: 0.0507 time_cost: 4.49
+steps:    31700 loss: 0.0509 time_cost: 4.20
+epoch:   61    loss: 0.05433    time:Wed Oct 12 18:14:54 2022
+steps:    31800 loss: 0.0514 time_cost: 36.46
+steps:    31900 loss: 0.0519 time_cost: 4.65
+steps:    32000 loss: 0.0507 time_cost: 4.14
+steps:    32100 loss: 0.0496 time_cost: 3.99
+steps:    32200 loss: 0.0497 time_cost: 4.32
+epoch:   62    loss: 0.05205    time:Wed Oct 12 18:15:46 2022
+steps:    32300 loss: 0.0512 time_cost: 29.13
+steps:    32400 loss: 0.0513 time_cost: 4.52
+steps:    32500 loss: 0.0505 time_cost: 4.20
+steps:    32600 loss: 0.0494 time_cost: 4.22
+steps:    32700 loss: 0.0500 time_cost: 4.34
+epoch:   63    loss: 0.05180    time:Wed Oct 12 18:16:36 2022
+steps:    32800 loss: 0.0515 time_cost: 33.54
+steps:    32900 loss: 0.0507 time_cost: 4.67
+steps:    33000 loss: 0.0513 time_cost: 5.10
+steps:    33100 loss: 0.0507 time_cost: 4.62
+steps:    33200 loss: 0.0507 time_cost: 4.83
+epoch:   64    loss: 0.05267    time:Wed Oct 12 18:17:31 2022
+steps:    33300 loss: 0.0524 time_cost: 38.20
+steps:    33400 loss: 0.0517 time_cost: 4.82
+steps:    33500 loss: 0.0506 time_cost: 4.74
+steps:    33600 loss: 0.0519 time_cost: 4.34
+steps:    33700 loss: 0.0515 time_cost: 4.54
+epoch:   65    loss: 0.05274    time:Wed Oct 12 18:18:27 2022
+steps:    33800 loss: 0.0516 time_cost: 29.02
+steps:    33900 loss: 0.0513 time_cost: 4.87
+steps:    34000 loss: 0.0513 time_cost: 4.48
+steps:    34100 loss: 0.0507 time_cost: 4.11
+steps:    34200 loss: 0.0510 time_cost: 4.50
+steps:    34300 loss: 0.0510 time_cost: 4.79
+epoch:   66    loss: 0.05439    time:Wed Oct 12 18:19:16 2022
+steps:    34400 loss: 0.0513 time_cost: 28.60
+steps:    34500 loss: 0.0512 time_cost: 5.22
+steps:    34600 loss: 0.0512 time_cost: 4.94
+steps:    34700 loss: 0.0512 time_cost: 5.24
+steps:    34800 loss: 0.0512 time_cost: 5.22
+epoch:   67    loss: 0.05099    time:Wed Oct 12 18:20:11 2022
+steps:    34900 loss: 0.0518 time_cost: 57.55
+steps:    35000 loss: 0.0509 time_cost: 6.14
+steps:    35100 loss: 0.0503 time_cost: 4.99
+steps:    35200 loss: 0.0505 time_cost: 4.51
+steps:    35300 loss: 0.0513 time_cost: 4.41
+epoch:   68    loss: 0.05044    time:Wed Oct 12 18:21:28 2022
+steps:    35400 loss: 0.0506 time_cost: 33.66
+steps:    35500 loss: 0.0520 time_cost: 5.60
+steps:    35600 loss: 0.0509 time_cost: 4.91
+steps:    35700 loss: 0.0510 time_cost: 4.53
+steps:    35800 loss: 0.0509 time_cost: 4.24
+epoch:   69    loss: 0.05121    time:Wed Oct 12 18:22:18 2022
+steps:    35900 loss: 0.0510 time_cost: 32.23
+steps:    36000 loss: 0.0507 time_cost: 5.16
+steps:    36100 loss: 0.0508 time_cost: 5.11
+steps:    36200 loss: 0.0506 time_cost: 4.85
+steps:    36300 loss: 0.0499 time_cost: 4.67
+epoch:   70    loss: 0.05335    time:Wed Oct 12 18:23:13 2022
+steps:    36400 loss: 0.0508 time_cost: 30.06
+steps:    36500 loss: 0.0518 time_cost: 4.30
+steps:    36600 loss: 0.0513 time_cost: 4.54
+steps:    36700 loss: 0.0502 time_cost: 4.41
+steps:    36800 loss: 0.0512 time_cost: 4.67
+epoch:   71    loss: 0.05195    time:Wed Oct 12 18:23:59 2022
+steps:    36900 loss: 0.0500 time_cost: 28.71
+steps:    37000 loss: 0.0502 time_cost: 4.96
+steps:    37100 loss: 0.0516 time_cost: 4.83
+steps:    37200 loss: 0.0504 time_cost: 4.07
+steps:    37300 loss: 0.0497 time_cost: 4.25
+epoch:   72    loss: 0.05265    time:Wed Oct 12 18:24:49 2022
+steps:    37400 loss: 0.0514 time_cost: 33.59
+steps:    37500 loss: 0.0510 time_cost: 4.79
+steps:    37600 loss: 0.0497 time_cost: 5.29
+steps:    37700 loss: 0.0505 time_cost: 4.73
+steps:    37800 loss: 0.0511 time_cost: 4.37
+epoch:   73    loss: 0.05279    time:Wed Oct 12 18:25:43 2022
+steps:    37900 loss: 0.0509 time_cost: 33.10
+steps:    38000 loss: 0.0502 time_cost: 4.35
+steps:    38100 loss: 0.0504 time_cost: 4.38
+steps:    38200 loss: 0.0510 time_cost: 4.54
+steps:    38300 loss: 0.0508 time_cost: 4.28
+steps:    38400 loss: 0.0507 time_cost: 4.86
+epoch:   74    loss: 0.05159    time:Wed Oct 12 18:26:31 2022
+steps:    38500 loss: 0.0500 time_cost: 29.47
+steps:    38600 loss: 0.0509 time_cost: 4.26
+steps:    38700 loss: 0.0514 time_cost: 4.80
+steps:    38800 loss: 0.0517 time_cost: 4.23
+steps:    38900 loss: 0.0504 time_cost: 4.17
+epoch:   75    loss: 0.05224    time:Wed Oct 12 18:27:20 2022
+steps:    39000 loss: 0.0496 time_cost: 30.32
+steps:    39100 loss: 0.0500 time_cost: 4.34
+steps:    39200 loss: 0.0495 time_cost: 4.68
+steps:    39300 loss: 0.0501 time_cost: 4.29
+steps:    39400 loss: 0.0501 time_cost: 5.09
+epoch:   76    loss: 0.05151    time:Wed Oct 12 18:28:14 2022
+steps:    39500 loss: 0.0501 time_cost: 35.50
+steps:    39600 loss: 0.0507 time_cost: 4.23
+steps:    39700 loss: 0.0507 time_cost: 4.27
+steps:    39800 loss: 0.0503 time_cost: 4.66
+steps:    39900 loss: 0.0498 time_cost: 4.21
+epoch:   77    loss: 0.05110    time:Wed Oct 12 18:29:03 2022
+steps:    40000 loss: 0.0498 time_cost: 28.33
+steps:    40100 loss: 0.0501 time_cost: 4.59
+steps:    40200 loss: 0.0504 time_cost: 4.29
+steps:    40300 loss: 0.0517 time_cost: 4.42
+steps:    40400 loss: 0.0511 time_cost: 4.23
+epoch:   78    loss: 0.05211    time:Wed Oct 12 18:29:51 2022
+steps:    40500 loss: 0.0516 time_cost: 29.58
+steps:    40600 loss: 0.0517 time_cost: 4.89
+steps:    40700 loss: 0.0510 time_cost: 4.64
+steps:    40800 loss: 0.0508 time_cost: 5.00
+steps:    40900 loss: 0.0508 time_cost: 4.57
+epoch:   79    loss: 0.05187    time:Wed Oct 12 18:30:41 2022
+steps:    41000 loss: 0.0509 time_cost: 31.74
+steps:    41100 loss: 0.0513 time_cost: 4.63
+steps:    41200 loss: 0.0505 time_cost: 4.35
+steps:    41300 loss: 0.0500 time_cost: 4.20
+steps:    41400 loss: 0.0507 time_cost: 4.23
+epoch:   80    loss: 0.05117    time:Wed Oct 12 18:31:30 2022
+steps:    41500 loss: 0.0509 time_cost: 30.18
+steps:    41600 loss: 0.0511 time_cost: 4.68
+steps:    41700 loss: 0.0494 time_cost: 4.25
+steps:    41800 loss: 0.0505 time_cost: 4.01
+steps:    41900 loss: 0.0505 time_cost: 3.98
+epoch:   81    loss: 0.05223    time:Wed Oct 12 18:32:19 2022
+steps:    42000 loss: 0.0516 time_cost: 31.60
+steps:    42100 loss: 0.0512 time_cost: 5.05
+steps:    42200 loss: 0.0501 time_cost: 5.44
+steps:    42300 loss: 0.0498 time_cost: 5.02
+steps:    42400 loss: 0.0508 time_cost: 5.09
+epoch:   82    loss: 0.05229    time:Wed Oct 12 18:33:12 2022
+steps:    42500 loss: 0.0508 time_cost: 36.57
+steps:    42600 loss: 0.0508 time_cost: 4.33
+steps:    42700 loss: 0.0499 time_cost: 4.17
+steps:    42800 loss: 0.0493 time_cost: 4.66
+steps:    42900 loss: 0.0491 time_cost: 4.38
+steps:    43000 loss: 0.0507 time_cost: 4.52
+epoch:   83    loss: 0.05398    time:Wed Oct 12 18:34:05 2022
+steps:    43100 loss: 0.0498 time_cost: 28.34
+steps:    43200 loss: 0.0495 time_cost: 4.91
+steps:    43300 loss: 0.0501 time_cost: 4.21
+steps:    43400 loss: 0.0504 time_cost: 4.56
+steps:    43500 loss: 0.0500 time_cost: 4.13
+epoch:   84    loss: 0.05229    time:Wed Oct 12 18:34:54 2022
+steps:    43600 loss: 0.0502 time_cost: 32.20
+steps:    43700 loss: 0.0498 time_cost: 4.91
+steps:    43800 loss: 0.0504 time_cost: 4.71
+steps:    43900 loss: 0.0511 time_cost: 4.83
+steps:    44000 loss: 0.0507 time_cost: 4.55
+epoch:   85    loss: 0.05262    time:Wed Oct 12 18:35:47 2022
+steps:    44100 loss: 0.0509 time_cost: 34.20
+steps:    44200 loss: 0.0513 time_cost: 4.13
+steps:    44300 loss: 0.0504 time_cost: 4.46
+steps:    44400 loss: 0.0500 time_cost: 4.26
+steps:    44500 loss: 0.0497 time_cost: 3.88
+epoch:   86    loss: 0.05182    time:Wed Oct 12 18:36:39 2022
+steps:    44600 loss: 0.0507 time_cost: 29.04
+steps:    44700 loss: 0.0494 time_cost: 4.47
+steps:    44800 loss: 0.0501 time_cost: 4.34
+steps:    44900 loss: 0.0506 time_cost: 4.37
+steps:    45000 loss: 0.0497 time_cost: 4.75
+epoch:   87    loss: 0.05225    time:Wed Oct 12 18:37:26 2022
+steps:    45100 loss: 0.0501 time_cost: 31.55
+steps:    45200 loss: 0.0495 time_cost: 4.95
+steps:    45300 loss: 0.0494 time_cost: 4.48
+steps:    45400 loss: 0.0509 time_cost: 5.22
+steps:    45500 loss: 0.0510 time_cost: 4.59
+epoch:   88    loss: 0.05114    time:Wed Oct 12 18:38:21 2022
+steps:    45600 loss: 0.0510 time_cost: 35.26
+steps:    45700 loss: 0.0501 time_cost: 4.11
+steps:    45800 loss: 0.0496 time_cost: 4.79
+steps:    45900 loss: 0.0496 time_cost: 4.39
+steps:    46000 loss: 0.0486 time_cost: 4.80
+epoch:   89    loss: 0.05210    time:Wed Oct 12 18:39:12 2022
+steps:    46100 loss: 0.0493 time_cost: 28.12
+steps:    46200 loss: 0.0505 time_cost: 4.41
+steps:    46300 loss: 0.0504 time_cost: 5.11
+steps:    46400 loss: 0.0515 time_cost: 4.73
+steps:    46500 loss: 0.0496 time_cost: 4.77
+epoch:   90    loss: 0.05187    time:Wed Oct 12 18:40:02 2022
+steps:    46600 loss: 0.0497 time_cost: 31.18
+steps:    46700 loss: 0.0500 time_cost: 5.22
+steps:    46800 loss: 0.0499 time_cost: 4.72
+steps:    46900 loss: 0.0504 time_cost: 4.51
+steps:    47000 loss: 0.0508 time_cost: 4.79
+steps:    47100 loss: 0.0501 time_cost: 4.20
+epoch:   91    loss: 0.05224    time:Wed Oct 12 18:40:55 2022
+steps:    47200 loss: 0.0510 time_cost: 35.22
+steps:    47300 loss: 0.0517 time_cost: 4.12
+steps:    47400 loss: 0.0511 time_cost: 4.20
+steps:    47500 loss: 0.0505 time_cost: 4.08
+steps:    47600 loss: 0.0498 time_cost: 4.17
+epoch:   92    loss: 0.05200    time:Wed Oct 12 18:41:49 2022
+steps:    47700 loss: 0.0491 time_cost: 30.75
+steps:    47800 loss: 0.0491 time_cost: 4.28
+steps:    47900 loss: 0.0496 time_cost: 4.56
+steps:    48000 loss: 0.0501 time_cost: 3.78
+steps:    48100 loss: 0.0500 time_cost: 4.67
+epoch:   93    loss: 0.05185    time:Wed Oct 12 18:42:37 2022
+steps:    48200 loss: 0.0493 time_cost: 29.44
+steps:    48300 loss: 0.0502 time_cost: 4.58
+steps:    48400 loss: 0.0497 time_cost: 4.66
+steps:    48500 loss: 0.0506 time_cost: 4.50
+steps:    48600 loss: 0.0512 time_cost: 4.43
+epoch:   94    loss: 0.05209    time:Wed Oct 12 18:43:27 2022
+steps:    48700 loss: 0.0506 time_cost: 31.95
+steps:    48800 loss: 0.0509 time_cost: 4.28
+steps:    48900 loss: 0.0503 time_cost: 4.31
+steps:    49000 loss: 0.0496 time_cost: 4.06
+steps:    49100 loss: 0.0499 time_cost: 4.27
+epoch:   95    loss: 0.05200    time:Wed Oct 12 18:44:17 2022
+steps:    49200 loss: 0.0496 time_cost: 28.35
+steps:    49300 loss: 0.0500 time_cost: 4.19
+steps:    49400 loss: 0.0501 time_cost: 4.62
+steps:    49500 loss: 0.0506 time_cost: 4.19
+steps:    49600 loss: 0.0495 time_cost: 4.46
+epoch:   96    loss: 0.05154    time:Wed Oct 12 18:45:02 2022
+steps:    49700 loss: 0.0503 time_cost: 27.86
+steps:    49800 loss: 0.0506 time_cost: 4.74
+steps:    49900 loss: 0.0485 time_cost: 4.38
+steps:    50000 loss: 0.0497 time_cost: 4.69
+steps:    50100 loss: 0.0495 time_cost: 4.76
+epoch:   97    loss: 0.05298    time:Wed Oct 12 18:45:50 2022
+steps:    50200 loss: 0.0511 time_cost: 28.76
+steps:    50300 loss: 0.0492 time_cost: 4.85
+steps:    50400 loss: 0.0485 time_cost: 4.82
+steps:    50500 loss: 0.0496 time_cost: 4.51
+steps:    50600 loss: 0.0510 time_cost: 4.20
+epoch:   98    loss: 0.05154    time:Wed Oct 12 18:46:41 2022
+steps:    50700 loss: 0.0497 time_cost: 31.69
+steps:    50800 loss: 0.0502 time_cost: 4.42
+steps:    50900 loss: 0.0496 time_cost: 4.41
+steps:    51000 loss: 0.0505 time_cost: 4.01
+steps:    51100 loss: 0.0509 time_cost: 4.16
+steps:    51200 loss: 0.0496 time_cost: 4.36
+epoch:   99    loss: 0.05280    time:Wed Oct 12 18:47:27 2022

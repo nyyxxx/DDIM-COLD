@@ -257,33 +257,55 @@ class DiffusionVisionTransformer(nn.Module):
         return img
     
     @torch.no_grad()
-    def cold_sampler(self,device,k=10,N=128):
+    def cold_sampler(self,device,k=10,N=49):
         import time
         import copy
         start_time = time.time()  
-        noisy_img = torch.normal(0,1,(N,3,self.img_size[0],self.img_size[1]))    
+        noisy_img = torch.normal(0,1,(N,3)).unsqueeze(2).unsqueeze(3).expand(-1,-1,self.img_size[0],self.img_size[1]) #!!! all the same 
         noisy_img = noisy_img.to(device)
-        noise = copy.deepcopy(noisy_img)
+        # noise = copy.deepcopy(noisy_img)
         # eps = np.linspace(1,0,self.total_steps//k)[1:-1]
         # steps_t = list(eps**0.5*self.total_steps)
         # # steps_tk = steps_t[1:]+[0]
         # for t,tk in zip(steps_t,steps_tk):
-        for t in range(self.total_steps-1,0,-k):
-            steps = torch.tensor([int(t)]*N,device = device).long()
+        for t in range(6,0,-1):
+            steps = torch.tensor([t]*N,device = device).long()
             denoised_img = self.forward(noisy_img,steps)
-            denoised_img = torch.clamp(denoised_img,-1,1)
-            #DDIM
-            # alpha_tk = 1 - math.sqrt(int(tk)/self.total_steps)#+1e-5
-            # alpha_t = 1 - math.sqrt(int(t)/self.total_steps)+1e-5
-            alpha_tk = 1 - math.sqrt((t+1-k)/self.total_steps)#+1e-5
-            alpha_t = 1 - math.sqrt((t+1)/self.total_steps)+1e-5
-            pred_noisy_t = math.sqrt(alpha_t)*denoised_img+math.sqrt(1-alpha_t)*noise
-            pred_noisy_tk = math.sqrt(alpha_tk)*denoised_img+math.sqrt(1-alpha_tk)*noise
-            noisy_img = noisy_img-pred_noisy_t+pred_noisy_tk
+            denoised_img = torch.clamp(denoised_img,-1,1) #!!!bound
+            # #DDIM
+            # # alpha_tk = 1 - math.sqrt(int(tk)/self.total_steps)#+1e-5
+            # # alpha_t = 1 - math.sqrt(int(t)/self.total_steps)+1e-5
+            # alpha_tk = 1 - math.sqrt((t+1-k)/self.total_steps)#+1e-5
+            # alpha_t = 1 - math.sqrt((t+1)/self.total_steps)+1e-5
+            # pred_noisy_t = math.sqrt(alpha_t)*denoised_img+math.sqrt(1-alpha_t)*noise
+            # pred_noisy_tk = math.sqrt(alpha_tk)*denoised_img+math.sqrt(1-alpha_tk)*noise
+            # noisy_img = noisy_img-pred_noisy_t+pred_noisy_tk
+            noisy_img = denoised_img
             # noise = (noisy_img - math.sqrt(alpha_t)*denoised_img)/math.sqrt(1-alpha_t)
             # noisy_img = math.sqrt(alpha_tk)*(noisy_img/math.sqrt(alpha_t) + (math.sqrt((1-alpha_tk)/alpha_tk) - math.sqrt((1-alpha_t)/alpha_t))*noise)
             print(f"\rnoise level {int(t)}  {time.time()-start_time:.2f}",end='')
         img = (denoised_img.cpu()+1)/2
+        return img
+    
+    @torch.no_grad()
+    def cold_diffusion_sequence(self,device,N=5):
+        import time
+        start_time = time.time()
+        noisy_img = torch.normal(0,1,(N,3)).unsqueeze(2).unsqueeze(3).expand(-1,-1,self.img_size[0],self.img_size[1]) #!!! all the same 
+        noisy_img = noisy_img.to(device)
+        img = [(noisy_img.cpu()+1)/2]
+        for t in range(6,0,-1):
+            steps = torch.tensor([t]*N,device = device).long()
+            denoised_img = self.forward(noisy_img,steps)
+            denoised_img = torch.clamp(denoised_img,-1,1) #!!!bound         
+            #   #DDIM
+            # alpha_tk = 1 - math.sqrt((t+1-k)/self.total_steps)#+1e-5
+            # alpha_t = 1 - math.sqrt((t+1)/self.total_steps)+1e-5
+            # noise = (noisy_img - math.sqrt(alpha_t)*denoised_img)/math.sqrt(1-alpha_t)
+            # noisy_img = math.sqrt(alpha_tk)*(noisy_img/math.sqrt(alpha_t) + (math.sqrt((1-alpha_tk)/alpha_tk) - math.sqrt((1-alpha_t)/alpha_t))*noise)
+            noisy_img = denoised_img
+            img.append((denoised_img.cpu()+1)/2)
+            print(f"\rnoise level {t}  {time.time()-start_time:.2f}",end='')
         return img
     
     @torch.no_grad()
@@ -295,7 +317,7 @@ class DiffusionVisionTransformer(nn.Module):
         img = [(noisy_img.cpu()+1)/2]
         for t in range(self.total_steps-1,0,-k):
             steps = torch.tensor([t]*N,device = device).long()
-            denoised_img = self.forward(noisy_img,steps)
+            denoised_img = self.forward(noisy_img,steps)            #steps
             denoised_img = torch.clamp(denoised_img,-1,1)
             #DDIM
             alpha_tk = 1 - math.sqrt((t+1-k)/self.total_steps)#+1e-5
@@ -317,8 +339,8 @@ if __name__ == "__main__":
     # model = DiffusionVisionTransformer(img_size=[64,64],total_steps=2000,patch_size=4,embed_dim=256,depth=6,num_heads=4) #oxford flower
     # state = torch.load(get_path+"/Saved_Models/OxfordFlower.pkl")
 
-    model = DiffusionVisionTransformer(img_size=[200,200],total_steps=2000,patch_size=4,embed_dim=256,depth=6,num_heads=4) #oxford flower
-    state = torch.load(get_path+"/Saved_Models/OxfordFlower_200.pkl")
+    model = DiffusionVisionTransformer(img_size=[64,64],total_steps=2000,patch_size=8,embed_dim=384,depth=7,num_heads=12) #oxford flower
+    state = torch.load(get_path+"/Saved_Models/20220822vit_tiny_diffusion/bestloss.pkl")
 
     model.load_state_dict(state,strict=True)
     model.to(device)
@@ -327,9 +349,9 @@ if __name__ == "__main__":
 
 
     # #image sampling
-    # n_sqrt = 8
-    # img = model.sampler(device,10,n_sqrt**2)
-    # fig = plt.figure(figsize=(32., 32.))
+    # n_sqrt = 7
+    # img = model.cold_sampler(device)   #nyy cold_sampler
+    # fig = plt.figure(figsize=(64., 64.))
     # grid = ImageGrid(fig, 111,  # similar to subplot(111)
     #                 nrows_ncols=(n_sqrt, n_sqrt),  # creates 2x2 grid of axes
     #                 axes_pad=0.1,  # pad between axes in inch.
@@ -339,19 +361,19 @@ if __name__ == "__main__":
     #     ax.imshow(transF.to_pil_image(im))
     # plt.savefig(get_path+"/Saved_Models/samples.png",bbox_inches='tight')
 
-    # #show denoise sequence
-    # N = 6
-    # img = model.diffusion_sequence(device,100,N=N)
-    # fig = plt.figure(figsize=(len(img),1.5*N),dpi=300)
-    # grid = ImageGrid(fig, 111,  # similar to subplot(111)
-    #                 nrows_ncols=(N, len(img)),  # creates 2x2 grid of axes
-    #                 axes_pad=0.1,  # pad between axes in inch.
-    #                 )
-    # img = torch.stack(img,dim=0).transpose(0,1).flatten(0,1)
-    # for ax, im in zip(grid,img):
-    #     # Iterating over the grid returns the Axes.
-    #     ax.imshow(transF.to_pil_image(im))
-    # plt.savefig(get_path+"/Saved_Models/denoise_sequence.png",bbox_inches='tight')
+    #show denoise sequence
+    N = 5
+    img = model.cold_diffusion_sequence(device,N=N)
+    fig = plt.figure(figsize=(len(img),1.5*N),dpi=300)
+    grid = ImageGrid(fig, 111,  # similar to subplot(111)
+                    nrows_ncols=(N, len(img)),  # creates 2x2 grid of axes
+                    axes_pad=0.1,  # pad between axes in inch.
+                    )
+    img = torch.stack(img,dim=0).transpose(0,1).flatten(0,1)
+    for ax, im in zip(grid,img):
+        # Iterating over the grid returns the Axes.
+        ax.imshow(transF.to_pil_image(im))
+    plt.savefig(get_path+"/Saved_Models/denoise_sequence.png",bbox_inches='tight')
 
     #draft to image
     from PIL import Image  
